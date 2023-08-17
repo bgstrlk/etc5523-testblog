@@ -1,0 +1,16 @@
+{
+  "hash": "73c8149e8ebe475006cb17222f333ac7",
+  "result": {
+    "markdown": "---\ntitle: \"New Insight - Penguins\"\nformat: html\neditor: visual\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(palmerpenguins)\nlibrary(tidyverse)\n```\n:::\n\n\n# How many sample penguins in each of the islands in the palmerpenguin dataset?\n\nThere are three kind of species in the palmer penguin dataset: Adelie, Chinstrap, and Gentoo. Adelie penguins are found in all of 3 island with relatively same number of sample. Whereas Gentoo only found in the Biscoe island, and around 125 penguins were looked at. On the other hand, Chinstrap penguin found in the Dream island, about half number of Gentoo penguins numbers were looked at.\n\n\n::: {.cell}\n\n```{.r .cell-code}\npenguins %>%\n  ggplot(aes(x = island, fill = species)) +\n  geom_bar() +\n  theme_bw()\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
